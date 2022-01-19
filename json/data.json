@@ -1,0 +1,34 @@
+{
+    "items": [
+    {
+    	"department": "Customer Success",
+        "designation1": "Sr. Manager",
+        "designation2": "Program Management",
+        "location": "San Francisco, CA; New York, NY"
+    },
+    {
+    	"department": "Office of the CCO Team",
+        "designation1": "Community Technical Moderator",
+        "designation2": "",
+        "location": "Bangalore, India"
+    },
+    {
+    	"department": "Customer Success Engineers",
+        "designation1": "Customer Engagement Manager",
+        "designation2": "",
+        "location": "San Francisco, CA, United States"
+    },
+    {
+        "department": "Customer Success Engineers",
+        "designation1": "Customer Engagement Manager",
+        "designation2": "",
+        "location": "San Francisco, CA, United States"
+    },
+    {
+    	"department": "Office of the CCO Team",
+        "designation1": "Customer Data Engineer - Data",
+        "designation2": "Spark & AI",
+        "location": "Bangalore, India"
+    }
+    ]
+}
