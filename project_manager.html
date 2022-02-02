@@ -264,6 +264,74 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
+
+    //  Email Lambda function starts here 
+    function submitToAPI(e) {
+         e.preventDefault();
+         var URL = "https://412qcg7lui.execute-api.us-east-1.amazonaws.com/prod/api";
+
+              var Namere = /[A-Za-z]{1}[A-Za-z]/;
+              if (!Namere.test($("#firstName").val())) {
+                           alert ("Name can not less than 2 char");
+                  return;
+              }
+               var Namere1 = /[A-Za-z]{1}[A-Za-z]/;
+              if (!Namere.test($("#lastName").val())) {
+                           alert ("Name can not less than 2 char");
+                  return;
+              }
+              var mobilere = /[0-9]{10}/;
+              if (!mobilere.test($("#userPhone").val())) {
+                  alert ("Please enter valid mobile number");
+                  return;
+              }
+              if ($("#userEmail").val()=="") {
+                  alert ("Please enter your email id");
+                  return;
+              }
+
+             /* var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+              if (!reeamil.test($("#email-input").val())) {
+                  alert ("Please enter valid email address");
+                  return;
+              }*/
+
+         var fname = $("#firstName").val();
+         var lname = $("#lastName").val();
+         var phone = $("#userPhone").val();
+         var email = $("#userEmail").val();
+         var desc = $("#userMessage").val();
+         var data = {
+            fname : fname,
+            lname : lname,
+            phone : phone,
+            email : email,
+            desc : desc
+          };
+
+         $.ajax({
+           type: "POST",
+           url : "https://412qcg7lui.execute-api.us-east-1.amazonaws.com/prod/api",
+           dataType: "json",
+           crossDomain: "true",
+           contentType: "application/json; charset=utf-8",
+           data: JSON.stringify(data),
+
+           
+           success: function () {
+             // clear form and show a success message
+             alert("Successfull");
+             document.getElementById("contact-form").reset();
+         location.reload();
+           },
+           error: function () {
+             // show an error message
+             alert("UnSuccessfull");
+           }});
+       }
+
+  //  EMail Lambda function ends here
+
     </script>
     <!--End of Tawk.to Script-->
     <div class="popup_contact">
