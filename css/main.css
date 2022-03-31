@@ -87,13 +87,13 @@ h1 {
   font-size: 36px !important;
   font-weight: 700;
   line-height: 1.6;
-  color: #02373F!important;
+  color: var(--purple-color)!important;
 }
 h2 {
   font-size: 26px!important;
   font-weight: 700!important;
   line-height: 1.6;
-  color: #02373F!important;
+  color: var(--purple-color)!important;
 }
 h3{
   font-size: 24pxs;
@@ -105,7 +105,7 @@ h4{
   font-size: 18px!important;
   font-weight: 700;
   line-height: 1.6;
-  color: #02373F;
+  color: var(--purple-color);
 }
 .otherdba_s h2 {
   text-align: center;
@@ -377,7 +377,7 @@ body{
 }
 /*use case section*/
 .usecase_section {
-  background-image: linear-gradient(345deg, #38f8d4, #32717a);
+  background-image: linear-gradient(115deg, rgb(70, 65, 120), rgb(36, 48, 85));
   padding: 30px;
   color: #fff;
   text-align: center;
@@ -632,7 +632,7 @@ body{
 /*footer*/
 #footer {
   padding: 120px 30px 80px;
-  background-image: linear-gradient(180deg, #38f8d4, #32717a);
+  background-image: linear-gradient(115deg, #464178, #243055);
   color: #fff ;
   position: relative;
   font-weight: 300;
@@ -660,7 +660,7 @@ body{
   content: "";
 }
 .footer-list-div h5 {
-  color: #ffff;
+  color: var(--red-color);
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 15px;
@@ -1898,7 +1898,7 @@ body{
   padding: 30px 0;
   font-size: 20px;
   font-weight: 700;
-  color: #02373F;
+  color: var(--purple-color);
   text-align: center;
 }
 .solution-col h3:hover {
@@ -1954,7 +1954,7 @@ body{
 }
 /* accuracy */
 #accuracy {
-  background-image: linear-gradient(345deg, #38f8d4, #32717a);
+  background-image: linear-gradient(115deg, rgb(70, 65, 120), rgb(36, 48, 85));
   padding: 60px 0;
 }
 #accuracy .row-100 {
@@ -2504,7 +2504,7 @@ figure.team-content{
 
 .videos_tabs ul li a{
   display: block;
-  color: #02373F;
+  color: var(--purple-color);
   /* border: 1px solid #02373F; */
   padding: 10px 50px;
   font-size: 17px;
@@ -2514,7 +2514,7 @@ figure.team-content{
 
 .videos_tabs ul li.active a{
   color: #ffffff!important;
-  background: linear-gradient(45deg, #02373F 0%, #2DCCD3 100%);
+  background-image: linear-gradient(115deg, rgb(70, 65, 120), rgb(36, 48, 85));
   box-shadow: 9px 8px 24px -5px rgba(0,0,0,1);
 -webkit-box-shadow: 9px 8px 24px -5px rgba(0,0,0,1);
 -moz-box-shadow: 9px 8px 24px -5px rgba(0,0,0,1);
@@ -5362,7 +5362,7 @@ figure.img_right
 }
 .footer_container{
   font-size: 14px;
-  color: #000!important;
+  color: #fff!important;
 }
 .slick-slide {
   transition: all ease-in-out .3s;
