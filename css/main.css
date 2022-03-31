@@ -5509,3 +5509,9 @@ figure.img_right
 .homebanner_title{
   margin-bottom: 25px;
 }
+/* content mordertation */
+.cm img{
+  border-radius: 19px;
+  width: auto;
+  height: auto;
+}
