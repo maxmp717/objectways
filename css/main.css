@@ -5515,3 +5515,6 @@ figure.img_right
   width: auto;
   height: auto;
 }
+.grid_title > h3{
+  color: #304060;
+}
