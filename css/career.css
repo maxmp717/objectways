@@ -534,11 +534,7 @@ button:hover .button-text {
 }
 .grid_icon{
   font-size: 5em;
-<<<<<<< HEAD
   color: #6B7299;
-=======
-  color: #6b7299;
->>>>>>> 7d4dfda47d0d549bb917a2e71e6b607e71054cd2
 }
 .grid_1{
   display: inline-block;
@@ -554,11 +550,7 @@ button:hover .button-text {
   height: 2px;
   bottom: -15px;
   left: 0;
-<<<<<<< HEAD
   background-color:#304060;
-=======
-  background-color: #6b7299;
->>>>>>> 7d4dfda47d0d549bb917a2e71e6b607e71054cd2
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -574,11 +566,7 @@ button:hover .button-text {
   height: 2px;
   bottom: 300;
   left: 0;
-<<<<<<< HEAD
   background-color: #304060;
-=======
-  background-color: #6b7299;
->>>>>>> 7d4dfda47d0d549bb917a2e71e6b607e71054cd2
   transform-origin: top left;
   transition: transform 0.5s ease-out;
 }
