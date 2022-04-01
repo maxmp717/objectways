@@ -1944,7 +1944,10 @@ body{
     margin-top: 20px;
   font-size: 20px;
   font-weight: 700;
+<<<<<<< HEAD
   color: #400080;
+=======
+>>>>>>> 7d4dfda47d0d549bb917a2e71e6b607e71054cd2
   text-align: center;
 }
 .choose-icon img {
@@ -5510,3 +5513,37 @@ figure.img_right
 .homebanner_title{
   margin-bottom: 25px;
 }
+<<<<<<< HEAD
+=======
+/* content mordertation */
+.cm img{
+  border-radius: 19px;
+  width: auto;
+  height: auto;
+}
+.grid_title > h3{
+  color: #304060;
+}
+.gird_content > p{
+  color: #efefef;
+}
+@media only screen and (max-width: 350px){
+  .cm>img{
+    width: 200px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cms_row{
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .cm>img{
+    width: 300px;
+    height: auto;
+  }
+}
+.cm-service .col >h3{
+  color: #304060;
+}
+>>>>>>> 7d4dfda47d0d549bb917a2e71e6b607e71054cd2
