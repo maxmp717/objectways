@@ -534,7 +534,7 @@ button:hover .button-text {
 }
 .grid_icon{
   font-size: 5em;
-  color: #ee5149;
+  color: #6b7299;
 }
 .grid_1{
   display: inline-block;
@@ -550,9 +550,9 @@ button:hover .button-text {
   height: 2px;
   bottom: -15px;
   left: 0;
-  background-color: #e74532;
+  background-color: #6b7299;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.5s ease-out;
 }
 .grid_1:hover::after{
   transform: scaleX(1);
@@ -566,9 +566,9 @@ button:hover .button-text {
   height: 2px;
   bottom: 300;
   left: 0;
-  background-color: #e74532;
+  background-color: #6b7299;
   transform-origin: top left;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.5s ease-out;
 }
 .grid_1:hover::before{
   transform: scaleX(1);
