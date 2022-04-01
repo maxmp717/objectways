@@ -727,3 +727,18 @@ display: none !important;;
   padding-top: 20px;
   padding-bottom: 30px;
 }
+@media only screen and (max-width: 350px){
+  .cm>img{
+    width: 200px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .cms_row{
+    display: flex;
+    /* flex-direction: column; */
+  }
+  .cm>img{
+    width: 300px;
+    height: auto;
+  }
