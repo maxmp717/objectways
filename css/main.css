@@ -1944,7 +1944,7 @@ body{
     margin-top: 20px;
   font-size: 20px;
   font-weight: 700;
-  color: #02373F;
+  color: #400080;
   text-align: center;
 }
 .choose-icon img {
@@ -2173,6 +2173,7 @@ figure.team-content{
 /*------------------mlanda----------------*/
 .solution_title_section {
   padding: 60px 0;
+ 
 }
 
 /* other-service-provide */
@@ -5508,13 +5509,4 @@ figure.img_right
 }
 .homebanner_title{
   margin-bottom: 25px;
-}
-/* content mordertation */
-.cm img{
-  border-radius: 19px;
-  width: auto;
-  height: auto;
-}
-.grid_title > h3{
-  color: #304060;
 }
