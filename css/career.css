@@ -816,3 +816,6 @@ display: none !important;;
   display: flex;
   flex-direction: row-reverse;
 }
+.cm-service, .section4,.section-5{
+  font-family: "HKGrotesk";
+}
