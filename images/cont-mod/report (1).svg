@@ -1,0 +1,53 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+	<title>&lt;Group&gt;</title>
+	<style>
+		.s0 { fill: #f9efe4 } 
+		.s1 { fill: #f96232 } 
+		.s2 { fill: #242d3c } 
+		.s3 { fill: #43d3e8 } 
+	</style>
+	<ellipse id="Shape 1" class="s0" cx="149.5" cy="153" rx="99.5" ry="102"/>
+	<g id="&lt;Group&gt;">
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s1" d="m101.8 186.4v18.5h-11.5v-18.5z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m115.6 204.9h-4.6v-16.2h-18.4v16.2h-4.6v-20.8h27.6z"/>
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s1" d="m134 154.2v50.7h-11.5v-50.7z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m147.8 204.9h-4.6v-48.4h-18.4v48.4h-4.6v-53h27.6z"/>
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s1" d="m166.3 122v82.9h-11.5v-82.9z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m180.1 204.9h-4.6v-80.6h-18.4v80.6h-4.6v-85.2h27.6z"/>
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s3" d="m198.5 89.7v115.2h-11.5v-115.2z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m212.3 204.9h-4.6v-112.9h-18.4v112.9h-4.6v-117.5h27.6z"/>
+		</g>
+		<path id="&lt;Path&gt;" class="s2" d="m212.3 213.6h-124.3v-4.6h124.3z"/>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s2" d="m92.6 156.5h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m103.3 156.5h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m114.1 156.5h-4.6v-4.6h4.6z"/>
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s2" d="m92.6 124.3h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m103.3 124.3h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m114.1 124.3h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m124.8 124.3h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m135.6 124.3h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m146.3 124.3h-4.6v-4.6h4.6z"/>
+		</g>
+		<g id="&lt;Group&gt;">
+			<path id="&lt;Path&gt;" class="s2" d="m92.6 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m103.3 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m114.1 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m124.8 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m135.6 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m146.3 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m157.1 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m167.8 92h-4.6v-4.6h4.6z"/>
+			<path id="&lt;Path&gt;" class="s2" d="m178.5 92h-4.6v-4.6h4.6z"/>
+		</g>
+	</g>
+</svg>

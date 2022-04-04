@@ -763,8 +763,8 @@ display: none !important;;
   border-radius: 10px;
 }
 .cm_process img{
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: auto;
   padding-right: 40px;
 }
 .grid_title{
