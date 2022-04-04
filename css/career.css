@@ -532,9 +532,9 @@ button:hover .button-text {
   justify-content: center;
   flex-direction: column;
 }
-.grid_icon{
-  font-size: 5em;
-  color: #6B7299;
+.grid_icon > img{
+  width: 80px;
+  height: auto;
 }
 .grid_1{
   display: inline-block;
@@ -766,4 +766,10 @@ display: none !important;;
   width: 100px;
   height: 100px;
   padding-right: 40px;
+}
+.grid_title{
+  margin: 5px 0 20px 0;
+}
+.cms-title{
+  margin: 0 0 30px 0;
 }
