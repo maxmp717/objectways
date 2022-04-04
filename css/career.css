@@ -702,6 +702,7 @@ button:hover .button-text {
 }
 .grid_title > h3{
   color: #304060;
+  font-size: 20px;
 }
 .section-5.card-img-overlay {
 display: none !important;;
@@ -738,7 +739,7 @@ display: none !important;;
     display: flex;
     /* flex-direction: column; */
   }
-  .cm img{
+  .cm>img{
     width: 300px;
     height: auto;
   }
@@ -760,4 +761,9 @@ display: none !important;;
   display: block;
   background-color: #fe7058;
   border-radius: 10px;
+}
+.cm_process img{
+  width: 100px;
+  height: 100px;
+  padding-right: 40px;
 }
