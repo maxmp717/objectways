@@ -744,6 +744,19 @@ display: none !important;;
     width: 250px !important;
     height: auto;
   }
+  .cms-row{
+    display: flex;
+    flex-direction: column;
+    margin: -37px 0 170px 0;
+  }
+  .cms-col{
+    padding-top: 375px;
+  }
+  .cms-row-r{
+      display: flex;
+      flex-direction: column !important;
+      margin: -37px 0 170px 0;
+  }
 }
 .h1_text{
   font-size: 36px !important;
@@ -798,4 +811,8 @@ display: none !important;;
   100%{
     transform: translateX(20px);
   }
+}
+.cms-row-r{
+  display: flex;
+  flex-direction: row-reverse;
 }
