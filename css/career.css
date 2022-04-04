@@ -767,6 +767,13 @@ display: none !important;;
   height: auto;
   padding-right: 40px;
 }
+.cm_process{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.section-5_tittle{
+  padding-top: 20px;
+}
 .grid_title{
   margin: 5px 0 20px 0;
 }
