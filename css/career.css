@@ -715,7 +715,7 @@ display: none !important;;
 }
 .section3{
  
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 .section4{
@@ -742,10 +742,22 @@ display: none !important;;
     width: 300px;
     height: auto;
   }
+}
 .h1_text{
   font-size: 36px !important;
   font-weight: 700;
   line-height: 1.6;
-  color: #e7f0fd!important;
+  color: #fff!important;
+  font-family: "HKGrotesk" !important;
 }
+.h1_color{
+  color: #fff!important;
+}
+
+.border_bar_2 {
+  width: 65px;
+  height: 3px;
+  display: block;
+  background-color: #fe7058;
+  border-radius: 10px;
 }
