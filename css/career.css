@@ -726,8 +726,11 @@ display: none !important;;
 }
 .section4{
   background-color: #f9efe4;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 30px;
+}
+.content_important{
+  padding-top: 20px;
 }
 .section-5{
   padding-top: 20px;
@@ -774,8 +777,8 @@ display: none !important;;
 }
 
 .border_bar_2 {
-  width: 65px;
-  height: 3px;
+  width: 55px;
+  height: 4px;
   display: block;
   background-color: #F6B85D;
   border-radius: 10px;
@@ -824,8 +827,8 @@ display: none !important;;
   font-family: "HKGrotesk";
 }
 .border_bar_3 {
-  width: 65px;
-  height: 5px;
+  width: 127px;
+  height: 4px;
   display: block;
   background-color: #F6B85D;
   border-radius: 10px;
