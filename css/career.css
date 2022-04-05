@@ -757,7 +757,10 @@ display: none !important;;
     margin: -37px 0 170px 0;
   }
   .cms-col{
-    padding-top: 375px;
+    padding-top: 525px;
+  }
+  .border_bar_3{
+    margin-right: 217px;
   }
   .cms-row-r{
       display: flex;
