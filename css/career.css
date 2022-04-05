@@ -561,7 +561,7 @@ button:hover .button-text {
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
-.grid_1:hover::after{
+/* .grid_1:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -580,7 +580,7 @@ button:hover .button-text {
 .grid_1:hover::before{
   transform: scaleX(1);
   transform-origin: top right;
-}
+} */
 .section-5 .card{
   background-color: #000;
   padding: 0;
@@ -712,6 +712,10 @@ display: none !important;;
 .section-5.card-img-overlay:hover {
   display:contents !important;;
 }
+.section1_title{
+  padding: 100px 0;
+ 
+}
 .section1{
   background-color: #6B7299;
 }
@@ -727,7 +731,7 @@ display: none !important;;
 }
 .section-5{
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 @media only screen and (max-width: 350px){
   .cm>img{
@@ -773,7 +777,7 @@ display: none !important;;
   width: 65px;
   height: 3px;
   display: block;
-  background-color: #fe7058;
+  background-color: #F6B85D;
   border-radius: 10px;
 }
 .cm_process img{
@@ -818,4 +822,11 @@ display: none !important;;
 }
 .cm-service, .section4,.section-5{
   font-family: "HKGrotesk";
+}
+.border_bar_3 {
+  width: 65px;
+  height: 5px;
+  display: block;
+  background-color: #F6B85D;
+  border-radius: 10px;
 }
