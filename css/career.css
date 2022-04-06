@@ -811,6 +811,7 @@ display: none !important;;
     top: 175px;
     left: -80px;
     z-index: -1;
+   color: #6A7299;
     animation: myAnim 0.5s ease-in-out infinite forwards;
 }
 
