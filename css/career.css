@@ -841,3 +841,6 @@ display: none !important;;
   background-color: #F6B85D;
   border-radius: 10px;
 }
+.cms-t > .border_bar_2{
+  width: 40px !important;
+}
