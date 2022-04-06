@@ -705,6 +705,10 @@ button:hover .button-text {
   color: #304060;
   font-size: 20px;
 }
+.cms-t  h3{
+  color: #000!important;
+  font-size: 20px;
+}
 .section-5.card-img-overlay {
 display: none !important;;
 
