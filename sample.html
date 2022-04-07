@@ -12,6 +12,7 @@
 <style>
   #myBtn{
     position: fixed;
+    background-image: "";
   }
   .modal {
   display: none; /* Hidden by default */
@@ -36,19 +37,19 @@
 }
 
 /* The Close Button */
-.close {
+/* .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
-}
+} */
 
-.close:hover,
+/* .close:hover,
 .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
+} */
 </style>
 </head>
 <body>
@@ -60,7 +61,7 @@
     
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close fa-light fa-xmark"></span>
         <p>Some text in the Modal..</p>
       </div>
     
@@ -105,4 +106,5 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script src="https://kit.fontawesome.com/d45a5731a6.js" crossorigin="anonymous"></script>
 </html>
