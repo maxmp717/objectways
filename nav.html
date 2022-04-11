@@ -1,6 +1,5 @@
-<header id="header">
-			<div class="container">
-				<nav class="navbar navbar-expand-md nav-control my_navbar" id="navbar">
+
+				
 					<!-- Brand -->
 					<a href="index.html" class="brand-logo">
 						<img src="images/Objectways_logo.png" alt="headerlogo" />
@@ -54,6 +53,82 @@
 							<li><a href="sample2.html">Hd</a></li>
 						</ul>
 					</div>
-				</nav>
-			</div>
-		</header>
+				<style>
+					.brand-logo img {
+  max-height: 32px;
+  max-width: 100%;
+					}
+					.navbar-toggler:focus {
+    outline: unset;
+  }
+  .navbar-collapse {
+    background: #fff;
+    padding-top: 10px;
+  }
+  .navbar-expand-md .navbar-collapse-1{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-preferred-size:auto;
+  flex-basis:auto;
+  flex-grow: 1;
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.nav-menu > li {
+  padding: 0px 10px 4px;
+  position: relative;
+  border-radius: 3px 3px 3px 3px;
+  font-family: "HKGrotesk";
+}
+.nav-menu > li > a {
+  color: #485a83;
+  font-size: 14px;
+  padding: 5px 0;
+  font-weight: 400;
+}
+.nav-menu li:hover > a {
+  color: #fff;
+}
+.nav-menu li:hover i {
+  transform: rotate(180deg);
+  color: #fff;
+}
+.nav-menu li:hover .sub_menu {
+  display: block;
+}
+.nav-menu li:hover {
+  background-color: #121b3b;
+  color: #fff;
+}
+.nav-menu li i {
+  color: #e74532;
+}
+.nav-menu {
+  position: relative;
+}
+.sub_menu {
+  background-color: #121b3b;
+  position: absolute;
+  z-index: 99;
+  width: 295px;
+  display: none;
+  border-radius: 0 0 3px 3px;
+  padding: 20px 0 10px;
+  top: 100%;
+  left: 0;
+}
+.sub_menu li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px 5px 20px;
+  display: block;
+}
+.sub_menu li a:hover {
+  color: #ddd !important;
+}
+
+				</style>
+		

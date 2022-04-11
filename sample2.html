@@ -23,20 +23,84 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+<style>
+	#loader {
+		/* border: 12px solid #f3f3f3;
+		border-radius: 50%;
+		border-top: 12px solid #444444;*/
+		width: 100%;
+		height: 300%; 
+		background: #000000e5;
+		z-index: 99;
+		position: fixed;
+		/* animation: spin 1s linear infinite; */
+	}
+	  
+	@keyframes spin {
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	  
+	.center {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.blob-1,.blob-2{
+	width:70px;
+	height:70px;
+	position:absolute;
+	background:#4f2d85;
+	border-radius:50%;
+	top:50%;left:50%;
+	transform:translate(-50%,-50%);
+}
+.blob-1{
+	left:20%;
+	animation:osc-l 2.5s ease infinite;
+}
+.blob-2{
+	left:80%;
+	animation:osc-r 2.5s ease infinite;
+	background:#ea5353;
+}
+@keyframes osc-l{
+	0%{left:40%;}
+	50%{left:50%;}
+	100%{left:40%;}
+}
+@keyframes osc-r{
+	0%{left:60%;}
+	50%{left:50%;}
+	100%{left:60%;}
+}
+</style>
 <body>
-    <div id="nav-placeholder">
+	<div id="loader" class="center"><div class = "blob-1"></div>
+	<div class = "blob-2"></div></div>
+	<nav class="navbar navbar-expand-md nav-control my_navbar" id="navbar">
 
-    </div>
-
+	</nav>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <script>
-      $("#nav-placeholder").load("nav.html");
-    
-    </script>
+        $("#nav-placeholder").load("nav.html");
+      
+      </script>
+	  <script>
+		var loader = document.getElementById("loader");
+
+		window.addEventListener("load",function(){
+			loader.style.display = "none";
+		})
+	  </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="js/jquery.min.js"></script> -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/poppup.js"></script>
 	<script src="https://kit.fontawesome.com/d45a5731a6.js" crossorigin="anonymous"></script>
-    
+    <script src="js/nav.js"></script>
 </body>
 </html>
