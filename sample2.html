@@ -77,14 +77,46 @@
 	50%{left:50%;}
 	100%{left:60%;}
 }
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+
+.cookie-alert {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 320px;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
 </style>
-<body>
+<>
 	<div id="loader" class="center"><div class = "blob-1"></div>
 	<div class = "blob-2"></div></div>
 	<nav class="navbar navbar-expand-md nav-control my_navbar" id="navbar">
 
 	</nav>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div class="card cookie-alert">
+	<div class="card-body">
+	  <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
+	  <p class="card-text">We use cookies to ensure you get the best experience on our website.</p>
+	  <div class="btn-toolbar justify-content-end">
+		<a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Learn more</a>
+		<a href="#" class="btn btn-primary accept-cookies">Accept</a>
+	  </div>
+	</div>
+  </div>
+
     <script>
         $("#nav-placeholder").load("nav.html");
       
@@ -95,6 +127,50 @@
 		window.addEventListener("load",function(){
 			loader.style.display = "none";
 		})
+	  </script>
+	  <script>
+		  (function () {
+  "use strict";
+
+  var cookieAlert = document.querySelector(".cookie-alert");
+  var acceptCookies = document.querySelector(".accept-cookies");
+
+  cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+  if (!getCookie("acceptCookies")) {
+    cookieAlert.classList.add("show");
+  }
+
+  acceptCookies.addEventListener("click", function () {
+    setCookie("acceptCookies", true, 60);
+    cookieAlert.classList.remove("show");
+  });
+})();
+
+// Cookie functions stolen from w3schools
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 	  </script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="js/jquery.min.js"></script> -->
