@@ -83,8 +83,8 @@
 .cookie-alert {
   position: fixed;
   bottom: 15px;
-  right: 15px;
-  width: 320px;
+  /* right: 15px; */
+  width: 100%;
   margin: 0 !important;
   z-index: 999;
   opacity: 0;
@@ -144,6 +144,9 @@ input:not(:placeholder-shown) + span{
   transform: translateY(0%);
   transition-delay: 1000ms;
 }
+.btn-toolbar{
+	justify-content: center;
+}
 
 </style>
 <body>
@@ -155,13 +158,17 @@ input:not(:placeholder-shown) + span{
 	</nav></div>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/enZ1uhyaGFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="card cookie-alert">
-	<div class="card-body">
+	<!-- <div class="card-body">
 	  <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
-	  <p class="card-text">We use cookies to ensure you get the best experience on our website.</p>
-	  <div class="btn-toolbar justify-content-end">
-		<a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Learn more</a>
-		<a href="#" class="btn btn-primary accept-cookies">Accept</a>
-	  </div>
+	  <p class="card-text">We use cookies to ensure you get the best experience on our website.</p> -->
+	  <div class="row g-0 card-body">
+		<div class="col-sm-6 col-md-8 card-text">&#x1F36A;  We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also disclose information about your use of our site with our social media, advertising and analytics partners.</div>
+		<div class="col-6 col-md-4">
+	  <div class="btn-toolbar ">
+		<a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Cookies Policy</a>
+		<a href="#" class="btn btn-primary accept-cookies">Accept Cookies</a>
+	  </div></div> </div>
+
 	</div>
   </div>
   <button id="click" >Hai</button>
