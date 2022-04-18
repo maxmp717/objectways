@@ -5564,3 +5564,9 @@ width: 250px;
 height: 100%;
 border-radius: 10px;
 }
+/* poc page */
+.form_controls1 label {
+   color:#212529!important;
+  text-transform: unset!important; 
+  font-size: 16px!important;
+}
