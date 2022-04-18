@@ -10,6 +10,7 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -220,7 +221,7 @@
 
               var Namere = /[A-Za-z]{1}[A-Za-z]/;
               if (!Namere.test($("#firstName").val())) {
-                           alert ("Name can not less than 2 char");
+                Swal.fire('Name Cannot Be Less than 2 char')
                   return;
               }
                var Namere1 = /[A-Za-z]{1}[A-Za-z]/;
@@ -268,17 +269,29 @@
            
            success: function () {
              // clear form and show a success message
-             alert("Successfull");
+            //  alert("Successfull");
+            Swal.fire({
+  icon: 'success',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
              document.getElementById("contact-form").reset();
          location.reload();
            },
            error: function () {
              // show an error message
-             alert("UnSuccessfull");
+            //  alert("UnSuccessfull");
+            Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
            }});
        }
 
-  //  EMail Lambda function ends here -->
+  //  EMail Lambda function ends here 
     </script>
     <!--End of Tawk.to Script-->
 

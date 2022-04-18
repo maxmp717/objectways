@@ -22,6 +22,7 @@
 	<link rel="shortcut icon" type="image/png" href="images/fav.png" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <style>
 	#loader {
@@ -98,14 +99,14 @@
 }
 
 </style>
-<>
+<body>
 	<div id="loader" class="center"><div class = "blob-1"></div>
 	<div class = "blob-2"></div></div>
+	<div class="container">
 	<nav class="navbar navbar-expand-md nav-control my_navbar" id="navbar">
 
-	</nav>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+	</nav></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/enZ1uhyaGFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="card cookie-alert">
 	<div class="card-body">
 	  <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
@@ -116,7 +117,8 @@
 	  </div>
 	</div>
   </div>
-
+  <button id="click" >Hai</button>
+  </button>
     <script>
         $("#nav-placeholder").load("nav.html");
       
@@ -128,6 +130,16 @@
 			loader.style.display = "none";
 		})
 	  </script>
+	<script>
+		$('#click').on('click',function(){
+			success:(Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+}))
+		})
+		</script>
 	  <script>
 		  (function () {
   "use strict";
@@ -172,11 +184,12 @@ function getCookie(cname) {
 }
 
 	  </script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="js/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/poppup.js"></script>
 	<script src="https://kit.fontawesome.com/d45a5731a6.js" crossorigin="anonymous"></script>
+	
     <script src="js/nav.js"></script>
 </body>
 </html>
