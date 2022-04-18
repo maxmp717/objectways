@@ -92,6 +92,53 @@
   transition: all 500ms ease-out;
 }
 
+form{
+    width:90vw;
+    max-width:768px;
+    border:1px solid #ddd;
+    padding:3vw;
+    display:flex;
+    flex-direction:column;
+    border-radius:5px;
+}
+
+label{
+    margin-bottom:15px;
+    position:relative;
+    border-bottom:1px solid #ddd;
+}
+input{
+    width:100%;
+    padding:10px 0px;
+    margin-top:20px;
+    border:none;
+    outline:none;
+}
+input::placeholder{
+    opacity:0;
+}
+span{
+    position:absolute;
+    top:0;
+    left:0;
+    transform:translateY(30px);
+    font-size:0.825em;
+    transition-duration:300ms;
+}
+button{
+    padding:15px 0px; 
+    margin-top:20px;
+    background:purple;
+    color:#fff;
+    border:1px solid purple;
+    cursor:pointer;
+    border-radius:3px;
+}
+label:focus-within > span,
+input:not(:placeholder-shown) + span{
+    color:purple;
+    transform:translateY(0px);
+}
 .cookie-alert.show {
   opacity: 1;
   transform: translateY(0%);
@@ -119,6 +166,23 @@
   </div>
   <button id="click" >Hai</button>
   </button>
+  <div class="register">
+    <form>
+        <label for="name">
+            <input type="text" id="name" placeholder="Name">
+            <span>Name</span>
+        </label>
+        <label for="email">
+            <input type="email" id="email" placeholder="Email">
+            <span>Email</span>
+        </label>
+        <label for="phone">
+            <input type="text" id="phone" placeholder="Phone">
+            <span>Phone</span>
+        </label>
+        <button type="button">Register</button>
+    </form>
+</div>
     <script>
         $("#nav-placeholder").load("nav.html");
       
@@ -133,9 +197,14 @@
 	<script>
 		$('#click').on('click',function(){
 			success:(Swal.fire({
-  icon: 'error',
-  title: 'Oops...',
-  text: 'Something went wrong!',
+  icon: 'success',
+  title: 'Great Successfully done',
+  timer: 3000,
+  backdrop: true,
+  toast: true,
+  timerProgressBar: true,
+  showConfirmButton: false,
+  text: 'We will get back you soon',
   footer: '<a href="">Why do I have this issue?</a>'
 }))
 		})
