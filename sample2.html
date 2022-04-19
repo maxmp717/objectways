@@ -269,3 +269,92 @@ function getCookie(cname) {
     <script src="js/nav.js"></script>
 </body>
 </html>
+
+
+
+<script>
+  function cat() {
+    var labelDesc = document.getElementById("labelDesc").value;
+    //  var ot = document.querySelector('#bbCheck:checked').value;
+    if ((document.getElementById('bbCheck').checked) == true) {
+      var bbCheck = document.getElementById("bbCheck").value;
+    }
+    //  var otw = document.querySelector('#segCheck:checked').value;
+    var segCheck = document.getElementById("segCheck").value;
+    var imgCheck = document.getElementById("imgCheck").value;
+    var textCheck = document.getElementById("textCheck").value;
+    var obCheck = document.getElementById("obCheck").value;
+    var pointCheck = document.getElementById("pointCheck").value;
+    var pdfCheck = document.getElementById("pdfCheck").value;
+    var ocrCheck = document.getElementById("ocrCheck").value;
+    var modalDesc = document.getElementById("modalDesc").value;
+    var imgFrame = document.getElementById("imgFrame").value;
+    var vidFrame = document.getElementById("vidFrame").value;
+    var pdfFrame = document.getElementById("pdfFrame").value;
+    var textFrame = document.getElementById("textFrame").value;
+    var ipDataDesc = document.getElementById("ipDataDesc").value;
+    var jsonOp = document.getElementById("jsonOp").value;
+    var cocoOp = document.getElementById("cocoOp").value;
+    var yoloOp = document.getElementById("yoloOp").value;
+    var csvOp = document.getElementById("csvOp").value;
+    var opDataDesc = document.getElementById("opDataDesc").value;
+    var quality = document.getElementById("quality").value;
+    var timeLine = document.getElementById("timeLine").value;
+    var LTool = document.getElementById("LTool").value;
+    var LVol = document.getElementById("LVol").value;
+    var skill = document.getElementById("skill").value;
+    if (document.getElementById("other_1").checked == true) {
+      var other_1 = "other_1:" + modalDesc
+    }
+    var checkbox1 = document.getElementsByName('check_1')
+    var checkbox2 = document.getElementsByName('check_2')
+    var checkbox3 = document.getElementsByName('check_3')
+
+    var result1 = "";
+    var result2 = "";
+    var result3 = "";
+
+    for (var i = 0; i < checkbox1.length; i++) {
+      if (checkbox1[i].checked) {
+        result1 += checkbox1[i].value
+          + " " + " , ";
+      }
+    }
+    for (var i = 0; i < checkbox2.length; i++) {
+      if (checkbox2[i].checked) {
+        result2 += checkbox2[i].value
+          + " " + " , ";
+      } }
+      for (var i = 0; i < checkbox3.length; i++) {
+      if (checkbox3[i].checked) {
+        result3 += checkbox3[i].value
+          + " " + " , ";
+      } }
+      console.log(result1, result2, result3)
+
+    }
+  
+</script>
+<script>
+   $("#submit").click(function(){
+    var c_1 = $("#labelDesc").val();
+  console.log(c_1);
+var res = "";
+  $('input:checkbox[name=check_1]').each(function() 
+  {    
+  if($(this).is(':checked'))
+   res += ($(this).val())+" "+",";
+});
+console.log("Type of Mod : "+res);
+
+
+var isChecked = $("#other_1").is(":checked");
+          if (isChecked) {
+             var u1 ="Other Modality Selected: "+ $("#modalDesc").val();
+          } else {
+              alert("CheckBox not checked.");
+          }
+          console.log(u1)
+  }); 
+ 
+</script>

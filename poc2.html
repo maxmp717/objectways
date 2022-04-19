@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<style>
+  .body {
+    background: #eee
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border-radius: 10px
+}
+
+#register {
+    color: #6A1B9A
+}
+
+h1 {
+    text-align: center
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    -webkit-appearance: none
+}
+
+.tab input:focus {
+    border: 1px solid #6a1b9a !important;
+    outline: none
+}
+
+input.invalid {
+    border: 1px solid #e03a0666
+}
+
+.tab {
+    display: none
+}
+
+button {
+    background-color: #6A1B9A;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer
+}
+
+button:hover {
+    opacity: 0.8
+}
+
+button:focus {
+    outline: none !important
+}
+
+#prevBtn {
+    background-color: #bbbbbb
+}
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center
+}
+
+.step {
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #6a1b9a;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    color: #fff;
+    background: #6a1b9a;
+    opacity: 1
+}
+
+
+.all-steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.thanks-message {
+    display: none
+}
+</style>
+<body>
+    <div class="wholepage" id="top">
+   <header id="header">
+            <div class="container">
+              <nav
+                class="navbar navbar-expand-md nav-control my_navbar"
+                id="navbar"
+              >
+                <!-- Brand -->
+                <a href="index.html" class="brand-logo">
+                  <img src="images/logo1.png" alt="headerlogo" />
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapsibleNavbar"
+                >
+                  <span class="hamspan"></span>
+                  <span class="hamspan"></span>
+                  <span class="hamspan"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav ml-auto nav-menu">
+                    <!--li class="active"><a href="products.html">Products</a></li -->
+                    <li>
+                      <a href="#">Solutions <i class="fas fa-caret-down"></i></a>
+                      <ul class="sub_menu">
+                        <li>
+                          <a href="dataLabeling.html"
+                            >Data Labeling</a
+                          >
+                        </li>
+                        <li>
+                          <a href="annotationDataLake.html"
+                            >Annotation Data Lake</a
+                          >
+                        </li>
+                        <li>
+                          <a href="mlandai.html">AI Solutions</a>
+                        </li>
+                        <li>
+                          <a href="data-sourcing.html">Data Sourcing</a>
+                        </li>
+                        <li>
+                          <a href="content moderation.html">Content Moderation</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Company <i class="fas fa-caret-down"></i></a>
+                      <ul class="sub_menu">
+                        <li><a href="about_us.html">About Us</a></li> 
+                        <li><a href="careers.html">Careers</a></li>
+                       <li><a href="security.html">Security</a></li>
+                       <li><a href="social_impact.html">Social Impact</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="use_cases.html">Use Cases</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <div class="container mt-5">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-8">
+                    <form id="regForm">
+                        <h1 id="register">Survey Form</h1>
+                        <div class="all-steps" id="all-steps"> <span class="step"><i class="fa fa-user"></i></span> <span class="step"><i class="fa fa-map-marker"></i></span> <span class="step"><i class="fa fa-shopping-bag"></i></span> <span class="step"><i class="fa fa-car"></i></span> <span class="step"><i class="fa fa-spotify"></i></span> <span class="step"><i class="fa fa-mobile-phone"></i></span> </div>
+                        <div class="tab">
+                            <h6>First name?</h6>
+                            <p> <input placeholder="First Name..." oninput="this.className = ''" name="fname"></p>
+                            <h6>Last Name</h6>
+                            <p> <input placeholder="Last Name..." oninput="this.className = ''" name="lname"></p>
+                            <h6>E-Mail</h6>
+                            <p> <input placeholder="Mail..." oninput="this.className = ''" name="mail"></p>
+                            <h6>Phone</h6>
+                            <p> <input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+                        </div>
+                        <div class="tab">
+                            <h6>Type of Modality ( check all that apply )</h6>
+                            <label>Bounding Box</label>
+                            <p><input placeholder="City" oninput="this.className = ''" name="dd" type="checkbox"></p>
+                        </div>
+                        <div class="tab">
+                            <h6>What's your Favourite Shopping site?</h6>
+                            <p><input placeholder="Favourite Shopping site" oninput="this.className = ''" name="email"></p>
+                        </div>
+                        <div class="tab">
+                            <h6>What's your Favourite car?</h6>
+                            <p><input placeholder="Favourite car" oninput="this.className = ''" name="uname"></p>
+                        </div>
+                        <div class="tab">
+                            <h6>What's your Favourite Song?</h6>
+                            <p><input placeholder="Favourite Song" oninput="this.className = ''" name="uname"></p>
+                        </div>
+                        <div class="tab">
+                            <h6>What's your Favourite Mobile brand?</h6>
+                            <p><input placeholder="Favourite Mobile Brand" oninput="this.className = ''" name="uname"></p>
+                        </div>
+                        <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                            <h3>Thankyou for your feedback!</h3> <span>Thanks for your valuable information. It helps us to improve our services!</span>
+                        </div>
+                        <div style="overflow:auto;" id="nextprevious">
+                            <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-angle-double-left"></i></button> <button type="button" id="nextBtn" onclick="nextPrev(1)"><i class="fa fa-angle-double-right"></i></button> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+       <footer id="footer">
+                  <div class="footer_container">
+                    <div class="footer-row row">
+                      <div class="col-sm-3">
+                        <div class="footer-list-div">
+                          <h5>Solutions</h5>
+                          <span class="border_bar_footer"></span>
+                          <ul class="footer-list">
+                          
+                            <li><a href="dataLabeling.html">Data Labeling</a></li>
+                            <li><a href="annotationDataLake.html">Annotation Data Lake</a></li>
+                            <li><a href="mlandai.html">AI Solutions</a></li>
+                            <li><a href="data-sourcing.html">Data Sourcing</a></li>
+                            <li>
+                              <a href="content moderation.html">Content Moderation</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer-list-div">
+                          <h5>Company</h5>
+                          <span class="border_bar_footer"></span>
+                          <ul class="footer-list">
+                            <li><a href="about_us.html">About Us</a></li>
+                            <li><a href="careers.html">Careers </a></li> 
+                            <li><a href="social_impact.html">Social Impact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="security.html">Security</a></li>
+                            <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                            <li><a href="terms_condition.html">Terms and Conditions</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer-list-div">
+                          <h5>Social</h5>
+                          <span class="border_bar_footer"></span>
+                          <ul class="footer-list">
+                           <li><a href="https://twitter.com/objectways">Twitter</a></li>
+                           <li><a href="https://www.linkedin.com/company/objectways">Linkedin</a></li><br>
+                           <h5>Contact US</h5>
+                          <span class="border_bar_footer"></span>
+                            <li><p>+1-800-619-1584</p></li>
+                            <li><p>sales@objectways.com</p></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer-list-div">
+                          <h5>US Office</h5>
+                          <span class="border_bar_footer"></span>
+                          <ul class="footer-list"> 
+                            <li><p>20715 N Pima Road</p></li>
+                            <li><p>Scottsdale, AZ 85255</p></li><br>
+                            <h5>India  Office</h5>
+                            <span class="border_bar_footer"></span>
+                            <li><p>29 B, K.P.Nagar</p></li>
+                            <li><p>Karur, TN, India - 639002</p></li>
+                            <li><p>+91-95979-70201</p></li>
+                             <li><p></p></li>
+                           
+                          </ul>
+                        </div>
+                      </div>
+                    
+                      
+                    </div>
+                    <p></p>
+                  </div>
+                </footer>
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5f8585af4704467e89f702e9/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+
+
+    //  Email Lambda function starts here 
+    function submitToAPI(e) {
+         e.preventDefault();
+         var URL = "https://412qcg7lui.execute-api.us-east-1.amazonaws.com/prod/api";
+
+              var Namere = /[A-Za-z]{1}[A-Za-z]/;
+              if (!Namere.test($("#firstName").val())) {
+                Swal.fire('Name Cannot Be Less than 2 char')
+                  return;
+              }
+               var Namere1 = /[A-Za-z]{1}[A-Za-z]/;
+              if (!Namere.test($("#lastName").val())) {
+                           alert ("Name can not less than 2 char");
+                  return;
+              }
+              var mobilere = /[0-9]{10}/;
+              if (!mobilere.test($("#userPhone").val())) {
+                  alert ("Please enter valid mobile number");
+                  return;
+              }
+              if ($("#userEmail").val()=="") {
+                  alert ("Please enter your email id");
+                  return;
+              }
+
+             /* var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+              if (!reeamil.test($("#email-input").val())) {
+                  alert ("Please enter valid email address");
+                  return;
+              }*/
+
+         var fname = $("#firstName").val();
+         var lname = $("#lastName").val();
+         var phone = $("#userPhone").val();
+         var email = $("#userEmail").val();
+         var desc = $("#userMessage").val();
+         var data = {
+            fname : fname,
+            lname : lname,
+            phone : phone,
+            email : email,
+            desc : desc
+          };
+
+         $.ajax({
+           type: "POST",
+           url : "https://412qcg7lui.execute-api.us-east-1.amazonaws.com/prod/api",
+           dataType: "json",
+           crossDomain: "true",
+           contentType: "application/json; charset=utf-8",
+           data: JSON.stringify(data),
+
+           
+           success: function () {
+             // clear form and show a success message
+            //  alert("Successfull");
+            Swal.fire({
+  icon: 'success',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
+             document.getElementById("contact-form").reset();
+         location.reload();
+           },
+           error: function () {
+             // show an error message
+            //  alert("UnSuccessfull");
+            Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
+           }});
+       }
+
+  //  EMail Lambda function ends here 
+    </script>
+    <!--End of Tawk.to Script-->
+
+    </div>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+          jQuery('.contact_popup').click(function(){ 
+            // jQuery('body').css('overflow','hidden');
+            jQuery('.popup_contact').fadeIn();
+          });
+          jQuery('.close_popup').click(function(){ 
+            jQuery('.popup_contact').fadeOut();
+            jQuery("#firstName").val("");
+            jQuery("#lastName").val("");
+            jQuery("#userEmail").val("");
+            jQuery("#userPhone").val("");
+            jQuery("#userMessage").val("");
+            // jQuery('body').css('overflow','visible');
+          });
+      });
+    </script>
+          
+                <script>
+                function sendContact() {
+                var valid;  
+                valid = validateContact();
+                if(valid) {
+                    jQuery.ajax({
+                    url: "contact_mail.php",
+                    data:'fname='+$("#firstName").val()+'&lname='+$("#lastName").val()+'&email='+$("#userEmail").val()+'&phone='+$("#userPhone").val()+'&message='+$("#userMessage").val(),
+                    type: "POST",
+                    success:function(data){
+                    $("#mail-status").html(data);
+                    },
+                    error:function (){}
+                    });
+                }
+               }
+               function validateContact() {
+                var valid = true;   
+                $(".demoInputBox").css('background-color','');
+                $(".info").html('');
+                if(!$("#firstName").val()) {
+                    $("#firstName-info").html("Please provide your first name");
+                    $("#firstName-info").css('color','red');
+                    valid = false;
+                }
+                if(!$("#lastName").val()) {
+                    $("#lastName-info").html("Please provide your last name");
+                    $("#lastName-info").css('color','red');
+                    valid = false;
+                }
+                if(!$("#userEmail").val()) {
+                    $("#userEmail-info").html("Please provide your email address");
+                    $("#userEmail-info").css('color','red');
+                    valid = false;
+                }
+                if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                    $("#userEmail-info").html("Please re-enter your valid email address");
+                    $("#userEmail-info").css('color','red');
+                    valid = false;
+                }
+             /*   if(!$("#userPhone").val()) {
+                    $("#userPhone-info").html("Please provide your Phone Number.");
+                    $("#userPhone-info").css('color','red');
+                    valid = false;
+                }
+                if(!$("#userMessage").val()) {
+                    $("#userMessage-info").html("Please write a message.");
+                    $("#userMessage-info").css('color','red');
+                    valid = false;
+                }*/
+                return valid;
+               }
+               </script>
+               <script>
+                 var currentTab = 0;
+document.addEventListener("DOMContentLoaded", function(event) {
+
+
+showTab(currentTab);
+
+});
+
+function showTab(n) {
+var x = document.getElementsByClassName("tab");
+x[n].style.display = "block";
+if (n == 0) {
+document.getElementById("prevBtn").style.display = "none";
+} else {
+document.getElementById("prevBtn").style.display = "inline";
+}
+if (n == (x.length - 1)) {
+document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
+} else {
+document.getElementById("nextBtn").innerHTML = '<i class="fa fa-angle-double-right"></i>';
+}
+fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+var x = document.getElementsByClassName("tab");
+if (n == 1 && !validateForm()) return false;
+x[currentTab].style.display = "none";
+currentTab = currentTab + n;
+if (currentTab >= x.length) {
+
+document.getElementById("nextprevious").style.display = "none";
+document.getElementById("all-steps").style.display = "none";
+document.getElementById("register").style.display = "none";
+document.getElementById("text-message").style.display = "block";
+
+
+
+
+}
+showTab(currentTab);
+}
+
+function validateForm() {
+var x, y, i, valid = true;
+x = document.getElementsByClassName("tab");
+y = x[currentTab].getElementsByTagName("input");
+for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" invalid" ; valid=false; } } if (valid) { document.getElementsByClassName("step")[currentTab].className +=" finish" ; } return valid; } function fixStepIndicator(n) { var i, x=document.getElementsByClassName("step"); for (i=0; i < x.length; i++) { x[i].className=x[i].className.replace(" active", "" ); } x[n].className +=" active" ; }
+                 </script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
