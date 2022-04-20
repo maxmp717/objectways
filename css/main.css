@@ -5570,3 +5570,6 @@ border-radius: 10px;
   text-transform: unset!important; 
   font-size: 16px!important;
 }
+.form-check>label{
+  cursor: pointer;
+}
