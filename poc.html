@@ -392,7 +392,7 @@
 
         var Namere = /[A-Za-z]{1}[A-Za-z]/;
         if (!Namere.test($("#firstName").val())) {
-          Swal.fire('Name Cannot Be Less than 2 char')
+          Swal.fire({toast:true,position:'top-end',text:'Name Cannot Be Less than 2 char',showConfirmButton: false,timer: 3000,timerProgressBar: true,})
           return;
         }
         var Namere1 = /[A-Za-z]{1}[A-Za-z]/;
@@ -484,6 +484,17 @@
           skill: skill
         };
 
+        Swal.fire({
+  icon: 'warning',
+  title: 'Please Wait',
+  timer: 3000,
+  backdrop: true,
+  timerProgressBar: true,
+  showConfirmButton: false,
+  text: 'We will get back you soon',
+  allowOutsideClick: false,
+})
+
         $.ajax({
           type: "POST",
           url: "https://412qcg7lui.execute-api.us-east-1.amazonaws.com/prod/api",
@@ -493,14 +504,17 @@
           data: JSON.stringify(data),
 
 
+
           success: function () {
             // clear form and show a success message
             //  alert("Successfull");
+            
             Swal.fire({
               icon: 'success',
               title: 'Successfully Submited',
               text: 'We will get Back You Soon Thanks '
             })
+
             document.getElementById("contact-form").reset();
             location.reload();
           },
