@@ -5570,12 +5570,21 @@ border-radius: 10px;
   text-transform: unset!important; 
   font-size: 16px!important;
 }
+<<<<<<< HEAD
+.form-check>label{
+  cursor: pointer;
+}
+=======
 .labeltitle{
   margin-top: 0.8rem;
 }
+<<<<<<< HEAD
 .form-check-input {
   position: relative;
   top: rem(-6);
   margin: 0 1rem 0 0 ;
   cursor: pointer;
 }
+=======
+>>>>>>> 845739eb8751ceab2f6e4ec2b8f0dc94a23c268c
+>>>>>>> 650cf137b6ea4fce0e2e9536b6fb3ccdd9de3bcd

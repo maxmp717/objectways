@@ -2,277 +2,260 @@
 <html>
 
 <head>
-	<meta charset="utf-8" />
-	<title>Data Sourcing</title>
-	<meta name="description"
-		content="Objectways is one of the best companies for offering data sourcing. Our service includes Audio, Image, Video and Document sourcing. Contact us today!" />
-	<meta title="Audio, Image, Video & Document Data Sourcing Services" />
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta property="og:url" content="https://objectways.com/annotationDataLake.html " />
-	<meta property="og:title" content="Data Annotation Company | Data Collection Services Specialist" />
-	<meta property="og:description"
-		content="Object ways offers data Collection services that include PDF, Computer Vision NLP and NER Annotation. We have a team of specialist for our professional services." />
-	<meta property="og:keywords"
-		content="data annotation company, data annotation specialist, data collection services, data collection company, data annotation service, PDF annotation, Computer Vision Annotation, NLP Annotation, NER Annotation" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/main.css" rel="stylesheet" type="text/css" />
-	<link rel="shortcut icon" type="image/png" href="images/fav.png" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="utf-8" />
+  <title>Data Sourcing</title>
+  <meta name="description"
+    content="Objectways is one of the best companies for offering data sourcing. Our service includes Audio, Image, Video and Document sourcing. Contact us today!" />
+  <meta title="Audio, Image, Video & Document Data Sourcing Services" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:url" content="https://objectways.com/annotationDataLake.html " />
+  <meta property="og:title" content="Data Annotation Company | Data Collection Services Specialist" />
+  <meta property="og:description"
+    content="Object ways offers data Collection services that include PDF, Computer Vision NLP and NER Annotation. We have a team of specialist for our professional services." />
+  <meta property="og:keywords"
+    content="data annotation company, data annotation specialist, data collection services, data collection company, data annotation service, PDF annotation, Computer Vision Annotation, NLP Annotation, NER Annotation" />
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="images/fav.png" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
 </head>
 <style>
-	#loader {
-		/* border: 12px solid #f3f3f3;
+  #loader {
+    /* border: 12px solid #f3f3f3;
 		border-radius: 50%;
 		border-top: 12px solid #444444;*/
-		width: 100%;
-		height: 300%; 
-		background: #000000e5;
-		z-index: 99;
-		position: fixed;
-		/* animation: spin 1s linear infinite; */
-	}
-	  
-	@keyframes spin {
-		100% {
-			transform: rotate(360deg);
-		}
-	}
-	  
-	.center {
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
-	.blob-1,.blob-2{
-	width:70px;
-	height:70px;
-	position:absolute;
-	background:#4f2d85;
-	border-radius:50%;
-	top:50%;left:50%;
-	transform:translate(-50%,-50%);
-}
-.blob-1{
-	left:20%;
-	animation:osc-l 2.5s ease infinite;
-}
-.blob-2{
-	left:80%;
-	animation:osc-r 2.5s ease infinite;
-	background:#ea5353;
-}
-@keyframes osc-l{
-	0%{left:40%;}
-	50%{left:50%;}
-	100%{left:40%;}
-}
-@keyframes osc-r{
-	0%{left:60%;}
-	50%{left:50%;}
-	100%{left:60%;}
-}
-/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+    width: 100%;
+    height: 300%;
+    background: #000000e5;
+    z-index: 99;
+    position: fixed;
+    /* animation: spin 1s linear infinite; */
+  }
 
-.cookie-alert {
-  position: fixed;
-  bottom: 15px;
-  /* right: 15px; */
-  width: 100%;
-  margin: 0 !important;
-  z-index: 999;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: all 500ms ease-out;
-}
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
-form{
-    width:90vw;
-    max-width:768px;
-    border:1px solid #ddd;
-    padding:3vw;
-    display:flex;
-    flex-direction:column;
-    border-radius:5px;
-}
+  .center {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 
-label{
-    margin-bottom:15px;
-    position:relative;
-    border-bottom:1px solid #ddd;
-}
-input{
-    width:100%;
-    padding:10px 0px;
-    margin-top:20px;
-    border:none;
-    outline:none;
-}
-input::placeholder{
-    opacity:0;
-}
-span{
-    position:absolute;
-    top:0;
-    left:0;
-    transform:translateY(30px);
-    font-size:0.825em;
-    transition-duration:300ms;
-}
-button{
-    padding:15px 0px; 
-    margin-top:20px;
-    background:purple;
-    color:#fff;
-    border:1px solid purple;
-    cursor:pointer;
-    border-radius:3px;
-}
-label:focus-within > span,
-input:not(:placeholder-shown) + span{
-    color:purple;
-    transform:translateY(0px);
-}
-.cookie-alert.show {
-  opacity: 1;
-  transform: translateY(0%);
-  transition-delay: 1000ms;
-}
-.btn-toolbar{
-	justify-content: center;
-}
+  .blob-1,
+  .blob-2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: #4f2d85;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
+  .blob-1 {
+    left: 20%;
+    animation: osc-l 2.5s ease infinite;
+  }
+
+  .blob-2 {
+    left: 80%;
+    animation: osc-r 2.5s ease infinite;
+    background: #ea5353;
+  }
+
+  @keyframes osc-l {
+    0% {
+      left: 40%;
+    }
+
+    50% {
+      left: 50%;
+    }
+
+    100% {
+      left: 40%;
+    }
+  }
+
+  @keyframes osc-r {
+    0% {
+      left: 60%;
+    }
+
+    50% {
+      left: 50%;
+    }
+
+    100% {
+      left: 60%;
+    }
+  }
+
+  /* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"); */
+
+  .cookie-alert {
+    position: fixed;
+    bottom: 15px;
+    /* right: 15px; */
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+  }
+
+  
+
+  .cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+  }
+
+  .btn-toolbar {
+    justify-content: center;
+  }
 </style>
-<body>
-	<div id="loader" class="center"><div class = "blob-1"></div>
-	<div class = "blob-2"></div></div>
-	<div class="container">
-	<nav class="navbar navbar-expand-md nav-control my_navbar" id="navbar">
 
-	</nav></div>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/enZ1uhyaGFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="card cookie-alert">
-	<!-- <div class="card-body">
+<body>
+  <div id="loader" class="center">
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+  </div>
+  <div class="container">
+    <nav class="navbar navbar-expand-md nav-control my_navbar" id="navbar">
+
+    </nav>
+  </div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/enZ1uhyaGFI" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  <div class="card cookie-alert">
+    <!-- <div class="card-body">
 	  <h5 class="card-title">&#x1F36A; Do you like cookies?</h5>
 	  <p class="card-text">We use cookies to ensure you get the best experience on our website.</p> -->
-	  <div class="row g-0 card-body">
-		<div class="col-sm-6 col-md-8 card-text">&#x1F36A;  We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also disclose information about your use of our site with our social media, advertising and analytics partners.</div>
-		<div class="col-6 col-md-4">
-	  <div class="btn-toolbar ">
-		<a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Cookies Policy</a>
-		<a href="#" class="btn btn-primary accept-cookies">Accept Cookies</a>
-	  </div></div> </div>
+    <div class="row g-0 card-body">
+      <div class="col-sm-6 col-md-8 card-text">&#x1F36A; We use cookies to personalise content and ads, to provide
+        social media features and to analyse our traffic. We also disclose information about your use of our site with
+        our social media, advertising and analytics partners.</div>
+      <div class="col-6 col-md-4">
+        <div class="btn-toolbar ">
+          <a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Cookies Policy</a>
+          <a href="#" class="btn btn-primary accept-cookies">Accept Cookies</a>
+        </div>
+      </div>
+    </div>
 
-	</div>
   </div>
-  <button id="click" >Hai</button>
+  </div>
+  <button id="click" onclick="c()">Hai</button>
   </button>
   <div class="register">
     <form>
-        <label for="name">
-            <input type="text" id="name" placeholder="Name">
-            <span>Name</span>
-        </label>
-        <label for="email">
-            <input type="email" id="email" placeholder="Email">
-            <span>Email</span>
-        </label>
-        <label for="phone">
-            <input type="text" id="phone" placeholder="Phone">
-            <span>Phone</span>
-        </label>
-        <button type="button">Register</button>
+      <label for="name">
+        <input type="text" id="name" placeholder="Name">
+        <span>Name</span>
+      </label>
+      <label for="email">
+        <input type="email" id="email" placeholder="Email">
+        <span>Email</span>
+      </label>
+      <label for="phone">
+        <input type="text" id="phone" placeholder="Phone">
+        <span>Phone</span>
+      </label>
+      <button type="button">Register</button>
     </form>
-</div>
-<label><input type="checkbox" name="checkbox" value="value">Text</label>
-    <script>
-        $("#nav-placeholder").load("nav.html");
-      
-      </script>
-	  <script>
-		var loader = document.getElementById("loader");
+  </div>
+  <label><input type="checkbox" name="checkbox" value="value">Text</label>
+ 
+  <script>
+    var loader = document.getElementById("loader");
 
-		window.addEventListener("load",function(){
-			loader.style.display = "none";
-		})
-	  </script>
-	<script>
-		$('#click').on('click',function(){
-			success:(Swal.fire({
-  icon: 'success',
-  title: 'Great Successfully done',
-  timer: 3000,
-  backdrop: true,
-  toast: true,
-  timerProgressBar: true,
-  showConfirmButton: false,
-  text: 'We will get back you soon',
-  footer: '<a href="">Why do I have this issue?</a>'
-}))
-		})
-		</script>
-	  <script>
-		  (function () {
-  "use strict";
-
-  var cookieAlert = document.querySelector(".cookie-alert");
-  var acceptCookies = document.querySelector(".accept-cookies");
-
-  cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
-
-  if (!getCookie("acceptCookies")) {
-    cookieAlert.classList.add("show");
-  }
-
-  acceptCookies.addEventListener("click", function () {
-    setCookie("acceptCookies", true, 60);
-    cookieAlert.classList.remove("show");
-  });
-})();
-
-// Cookie functions stolen from w3schools
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  var expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(";");
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) === " ") {
-      c = c.substring(1);
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    })
+  </script>
+  <script>
+    function c() {
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Something went wrong!',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })
     }
-    if (c.indexOf(name) === 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
+  </script>
+  <script>
+    (function () {
+      "use strict";
 
-	  </script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/poppup.js"></script>
-	<script src="https://kit.fontawesome.com/d45a5731a6.js" crossorigin="anonymous"></script>
-	
-    <script src="js/nav.js"></script>
+      var cookieAlert = document.querySelector(".cookie-alert");
+      var acceptCookies = document.querySelector(".accept-cookies");
+
+      cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+      if (!getCookie("acceptCookies")) {
+        cookieAlert.classList.add("show");
+      }
+
+      acceptCookies.addEventListener("click", function () {
+        setCookie("acceptCookies", true, 60);
+        cookieAlert.classList.remove("show");
+      });
+    })();
+
+    // Cookie functions stolen from w3schools
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(";");
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === " ") {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/poppup.js"></script>
+  <script src="https://kit.fontawesome.com/d45a5731a6.js" crossorigin="anonymous"></script>
+
+  <script src="js/nav.js"></script>
 </body>
+
 </html>
 
 
-
+<!-- 
 <script>
   function cat() {
     var labelDesc = document.getElementById("labelDesc").value;
@@ -358,4 +341,4 @@ var isChecked = $("#other_1").is(":checked");
           console.log(u1)
   }); 
  
-</script>
+</script> -->
