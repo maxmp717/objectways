@@ -84,27 +84,27 @@
                   <input type="hidden" name="contact_form" id="contact_form" value="1">
                   <div class="twocol_form">
                     <div class="form_controls form_controls1 ">
-                      <label>First name</label>
-                      <input type="text" class="form-control" name="fname" placeholder="First Name" id="firstName">
+                      <label>First Name</label>
+                      <input type="text" class="form-control" name="fname" placeholder="First name" id="firstName">
                       <span id="firstName-info" class="info"></span>
                     </div>
                     <div class="form_controls form_controls1">
                       <label>Last Name</label>
-                      <input type="text" class="form-control" name="lname" placeholder="Last Name" id="lastName">
+                      <input type="text" class="form-control" name="lname" placeholder="Last name" id="lastName">
                       <span id="lastName-info" class="info"></span>
                     </div>
                   </div>
                   <div class="twocol_form ">
                     <div class="form_controls form_controls1">
                       <label>Email address</label>
-                      <input type="email" class="form-control" name="email" placeholder="objectways@gmail.com"
+                      <input type="email" class="form-control" name="email" placeholder="example@gmail.com"
                         id="userEmail">
                       <span id="userEmail-info" class="info"></span>
                     </div>
                     <div class="form_controls form_controls1">
                       <label>Phone Number</label>
                       <input type="text" class="form-control" name="phone"
-                        placeholder="What's the best number to reach you?" id="userPhone">
+                        placeholder="+91" id="userPhone">
                       <span id="userPhone-info" class="info"></span>
                     </div>
                   </div>
@@ -221,7 +221,7 @@
                   </div>
                   <label>What are your timelines?</label>
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="timeLine" name="timeLine"
+                    <textarea class="form-control" placeholder="(Please specify)" id="timeLine" name="timeLine"
                       value="" style="height: 100px"></textarea>
                   </div>
                   <label>What is your labeling tool preference?</label>
@@ -238,7 +238,7 @@
                   <label>Do you have any special workforce skill requirements such as domain expertise, language, Locale
                     etc.</label>
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="skill" name="skill" value=""
+                    <textarea class="form-control" placeholder="(Please specify)" id="skill" name="skill" value=""
                       style="height: 100px"></textarea>
                     <label for="floatingTextarea"></label>
                   </div>
@@ -392,21 +392,21 @@
 
         var Namere = /[A-Za-z]{1}[A-Za-z]/;
         if (!Namere.test($("#firstName").val())) {
-          Swal.fire('Name Cannot Be Less than 2 char')
+          Swal.fire('Name Cannot Be Less than 2 char');
           return;
         }
         var Namere1 = /[A-Za-z]{1}[A-Za-z]/;
         if (!Namere.test($("#lastName").val())) {
-          alert("Name can not less than 2 char");
+          Swal.fire("Last Name can not less than 2 char");
           return;
         }
         var mobilere = /[0-9]{10}/;
         if (!mobilere.test($("#userPhone").val())) {
-          alert("Please enter valid mobile number");
+          Swal.fire("Please enter valid mobile number");
           return;
         }
         if ($("#userEmail").val() == "") {
-          alert("Please enter your email id");
+          Swal.fire("Please enter your email id");
           return;
         }
 
@@ -499,7 +499,7 @@
             Swal.fire({
               icon: 'success',
               title: 'Successfully Submited',
-              text: 'We will get Back You Soon Thanks '
+              text: 'The Program Manager has been informed and will contact you soon. Please stay tuned and we look forward to working with you.'
             })
             document.getElementById("contact-form").reset();
             location.reload();
