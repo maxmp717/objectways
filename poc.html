@@ -85,12 +85,12 @@
                   <div class="twocol_form">
                     <div class="form_controls form_controls1 ">
                       <label>First Name</label>
-                      <input type="text" class="form-control" name="fname" placeholder="First name" id="firstName">
+                      <input type="text" class="form-control" name="fname" placeholder="First name" id="firstName" required>
                       <span id="firstName-info" class="info"></span>
                     </div>
                     <div class="form_controls form_controls1">
                       <label>Last Name</label>
-                      <input type="text" class="form-control" name="lname" placeholder="Last name" id="lastName">
+                      <input type="text" class="form-control" name="lname" placeholder="Last name" id="lastName" required>
                       <span id="lastName-info" class="info"></span>
                     </div>
                   </div>
@@ -98,20 +98,20 @@
                     <div class="form_controls form_controls1">
                       <label>Email address</label>
                       <input type="email" class="form-control" name="email" placeholder="example@gmail.com"
-                        id="userEmail">
+                        id="userEmail" required>
                       <span id="userEmail-info" class="info"></span>
                     </div>
                     <div class="form_controls form_controls1">
                       <label>Phone Number</label>
                       <input type="text" class="form-control" name="phone"
-                        placeholder="+91" id="userPhone">
+                        placeholder="+91" id="userPhone" required>
                       <span id="userPhone-info" class="info"></span>
                     </div>
                   </div>
                   <label>Please describe your labeling use case</label>
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="(Please specify)" name="labelDesc" id="labelDesc"
-                      style="height: 100px"></textarea>
+                      style="height: 100px" required></textarea>
                   </div>
                   <label>Type of Modality ( check all that apply )</label>
                   <div class="form-check ">
@@ -217,22 +217,22 @@
                   <label>Please specify your Quality requirements?</label>
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="(Precision/Recall/F1)" id="quality" name="quality"
-                      value="" style="height: 100px"></textarea>
+                      value="" style="height: 100px" required></textarea>
                   </div>
                   <label>What are your timelines?</label>
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="(Please specify)" id="timeLine" name="timeLine"
-                      value="" style="height: 100px"></textarea>
+                      value="" style="height: 100px" required></textarea>
                   </div>
                   <label>What is your labeling tool preference?</label>
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="(Alternatively we can provide recommendations)"
-                      id="LTool" name="LTool" value="" style="height: 100px"></textarea>
+                      id="LTool" name="LTool" value="" style="height: 100px" required></textarea>
                   </div>
                   <label>What are your labeling volume requirements? </label>
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="(Number of Images/Videos/Documents etc.)" id="LVol"
-                      name="LVol" value="" style="height: 100px"></textarea>
+                      name="LVol" value="" style="height: 100px" required></textarea>
 
                   </div>
                   <label>Do you have any special workforce skill requirements such as domain expertise, language, Locale
