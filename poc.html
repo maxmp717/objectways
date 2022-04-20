@@ -392,11 +392,7 @@
 
         var Namere = /[A-Za-z]{1}[A-Za-z]/;
         if (!Namere.test($("#firstName").val())) {
-<<<<<<< HEAD
           Swal.fire({toast:true,position:'top-end',text:'Name Cannot Be Less than 2 char',showConfirmButton: false,timer: 3000,timerProgressBar: true,})
-=======
-          Swal.fire('Name Cannot Be Less than 2 char');
->>>>>>> e3caa69206625817a844b461e859bfe3b45a508b
           return;
         }
         var Namere1 = /[A-Za-z]{1}[A-Za-z]/;
@@ -515,7 +511,7 @@
             
             Swal.fire({
               icon: 'success',
-              title: 'Successfully Submited',
+              title: 'Successfully Submitted',
               text: 'The Program Manager has been informed and will contact you soon. Please stay tuned and we look forward to working with you.'
             })
 
